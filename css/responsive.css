@@ -36,7 +36,8 @@
         flex-direction: column-reverse;
         justify-content: center;
     }
-    .header-text-container{
+
+    .header-text-container {
         text-align: center;
     }
 
@@ -44,13 +45,38 @@
         font-size: 1.75rem;
         line-height: normal;
     }
-    .header-text-container p{
+
+    .header-text-container p {
         margin: 20px 0;
     }
-    .logo-container{
+
+    .logo-container {
         flex-wrap: wrap;
         box-shadow: none;
         margin-top: 20px;
+    }
+
+    /* collection */
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+
+    /* features-container */
+    .features-container {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+
+    .image-container,
+    .text-container {
+        width: 100%;
+    }
+
+    /* footer */
+    .footer-container {
+        padding: 20px;
+        margin-top: 30px;
     }
 
 }
@@ -61,6 +87,7 @@
     medium screen 
 */
 @media screen and (min-width:576px) and (max-width:860px) {
+
     /* header */
     .header-container>nav>ul {
         gap: 15px;
