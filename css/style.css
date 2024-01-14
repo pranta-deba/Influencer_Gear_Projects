@@ -1,0 +1,134 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* impotent Variable */
+:root {
+    --white-color: #FFF;
+    --black-color: #3A3A3A;
+    --gray-color: #787885;
+    --btn-color: #E02C6D;
+    --footer-bg-color: #0A0826;
+    --card-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+
+
+/* Target All Element */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.container {
+    max-width: 1440px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+/* header-container */
+.header-container {
+    margin-top: 80px;
+}
+
+.header-container>nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container>nav>ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.header-container>nav>a {
+    color: var(--black-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header-container>nav>ul li a {
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.header-text-container,
+.header-image-container {
+    width: 50%;
+}
+
+.header-container .header-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.header-text-container h1 {
+    color: var(--black-color);
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 4.375rem;
+}
+
+.header-text-container p {
+    color: var(--black-color);
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.header-text-container button {
+    border-radius: 2.5625rem;
+    background: var(--btn-color);
+    padding: 10px 25px;
+    color: var(--white-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header-text-container button i {
+    padding-left: 5px;
+}
+
+.header-image-container {
+    background: url("../assets/images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+}
+
+.header-image-container img {
+    width: 100%;
+    animation: ZoomEffect .2s ease-in-out 0s infinite alternate;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 44px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 80px;
+}
+.logo-container div{
+    display: flex;
+    align-items: center;
+}
+.logo-container div img{
+    width: 100%;
+}
